@@ -1,0 +1,112 @@
+es:
+  activerecord:
+    attributes:
+      doorkeeper/application:
+        name: 'Nombre'
+        redirect_uri: 'URI de redirección'
+    errors:
+      models:
+        doorkeeper/application:
+          attributes:
+            redirect_uri:
+              fragment_present: 'no puede contener un fragment.'
+              invalid_uri: 'debe ser una URI válida.'
+              relative_uri: 'debe ser una URI absoluta.'
+              secured_uri: 'debe ser una URI HTTPS/SSL.'
+  doorkeeper:
+    applications:
+      confirmations:
+        destroy: '¿De verdad quieres?'
+      buttons:
+        edit: 'Editar'
+        destroy: 'Destruir'
+        submit: 'Enviar'
+        cancel: 'Cancelar'
+        authorize: 'Autorizar'
+      form:
+        error: '¡Ups! Revisa tu formulario en busca de posibles errores'
+      help:
+        redirect_uri: 'Usa una línea por URI'
+        native_redirect_uri: 'Usa %{native_redirect_uri} para pruebas locales'
+        scopes: 'Separa alcances con espacios. Deja en blanco para usar los alcances predeterminados.'
+      edit:
+        title: 'Editar aplicación'
+      index:
+        title: 'Tus aplicaciones'
+        new: 'Nueva aplicación'
+        name: 'Nombre'
+        callback_url: 'URL de llamada'
+      new:
+        title: 'Nueva aplicación'
+      show:
+        title: 'Aplicación: %{name}'
+        application_id: 'ID de aplicación'
+        secret: 'Secreto'
+        scopes: 'Alcances'
+        callback_urls: 'Urls de llamada'
+        actions: 'Acciones'
+    authorizations:
+      buttons:
+        authorize: 'Autorizar'
+        deny: 'Denegar'
+      error:
+        title: 'Ha ocurrido un error'
+      new:
+        title: 'Autorización requerida'
+        prompt: '¿Autorizas a %{client_name} para usar tu cuenta?'
+        able_to: 'Esta aplicación es capaz de'
+      show:
+        title: 'Código de autorización'
+    authorized_applications:
+      confirmations:
+        revoke: '¿De verdad quieres?'
+      buttons:
+        revoke: 'Revocar'
+      index:
+        title: 'Tus aplicaciones autorizadas'
+        application: 'Aplicación'
+        created_at: 'Creado el'
+        date_format: '%d-%m-%Y %H:%M:%S'
+    errors:
+      messages:
+        #Common error messages
+        invalid_request: 'La solicitud no contiene un parámetro requerido, incluye un valor no soportado por un parámetro o tiene otro fallo de forma.'
+        invalid_redirect_uri: 'La uri de redirección no es válida.'
+        unauthorized_client: 'El cliente no está autorizado para realizar esta solicitud usando este método.'
+        access_denied: 'El dueño del recurso o el servidor de autorización denegó la solicitud.'
+        invalid_scope: 'El alcance de la solicitud es inválido, desconocido o tiene un fallo de forma.'
+        server_error: 'El servidor de autorización encontró una condición inesperada que le impidió completar la solicitud.'
+        temporarily_unavailable: 'El servidor de autorización no puede actualmente gestionar la solicitud debido a una sobrecarga temporal o mantención del servidor.'
+        #configuration error messages
+        credential_flow_not_configured: 'El flujo de credenciales de contraseña del dueño del recurso falló debido a que Doorkeeper.configure.resource_owner_from_credentials no está configurado.'
+        resource_owner_authenticator_not_configured: 'La búsqueda del dueño del recurso falló debido a que Doorkeeper.configure.resource_owner_authenticator no está configurado.'
+        #Access grant errors
+        unsupported_response_type: 'El servidor de autorización no soporta este tipo de respuesta.'
+        #Access token errors
+        invalid_client: 'Falló la autenticación del cliente debido a que el cliente es desconocido, no se incluyó la autenticación del cliente o no se soporta el método de autenticación.'
+        invalid_grant: 'La concesión de autorización proveída se encuentra inválida, expirada, revocada, no coincide con la URI de redirección usada en la solicitud de autorización o fue emitida por otro cliente.'
+        unsupported_grant_type: 'El tipo de concesión de autorización no es soportado por el servidor de autorización.'
+        #Password Access token errors
+        invalid_resource_owner: 'Las credenciales de dueño del recurso proveídas no son válidas o el dueño del recurso no pudo ser encontrado'
+        invalid_token:
+          revoked: "El token de acceso fue revocado"
+          expired: "El token de acceso expiró"
+          unknown: "El token de acceso es inválido"
+    flash:
+      applications:
+        create:
+          notice: 'Aplicación creada.'
+        destroy:
+          notice: 'Aplicación eliminada.'
+        update:
+          notice: 'Aplicación actualizada.'
+      authorized_applications:
+        destroy:
+          notice: 'Aplicación revocada.'
+    layouts:
+      admin:
+        nav:
+          oauth2_provider: 'Proveedor de OAuth2'
+          applications: 'Aplicaciones'
+      application:
+        title: 'Autorización de OAuth requerida'

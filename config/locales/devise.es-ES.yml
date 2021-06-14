@@ -1,0 +1,59 @@
+#Additional translations at https://github.com/plataformatec/devise/wiki/I18n
+es:
+  devise:
+    confirmations:
+      confirmed: "Tu dirección de correo ha sido confirmada exitosamente."
+      send_instructions: "Recibirás un correo con instrucciones sobre cómo confirmar tu dirección de correo en unos minutos."
+      send_paranoid_instructions: "Si tu dirección de correo existe en nuestra base de datos, recibirás un correo con instrucciones sobre cómo confirmar tu dirección de correo en unos minutos."
+    failure:
+      already_authenticated: "Ya te conectaste."
+      inactive: "Tu cuenta aún no está activada."
+      invalid: "%{authentication_keys} o contraseña inválida."
+      locked: "Tu cuenta está bloqueada."
+      last_attempt: "Tienes un intento más antes de que tu cuenta sea bloqueada."
+      not_found_in_database: "%{authentication_keys} o contraseña inválida."
+      timeout: "Tu sesión ha expirado. Por favor, vuelve a conectarte para continuar."
+      unauthenticated: "Debes conectarte o registrarte antes de continuar."
+      unconfirmed: "Debes confirmar tu dirección de correo antes de continuar."
+    mailer:
+      confirmation_instructions:
+        subject: "Instrucciones de confirmación"
+      reset_password_instructions:
+        subject: "Instrucciones de restablecimiento de contraseña"
+      unlock_instructions:
+        subject: "Instrucciones de desbloqueo"
+    omniauth_callbacks:
+      failure: "No se pudo realizar la autenticación desde %{kind} debido a %{reason}."
+      success: "Autenticación exitosa desde la cuenta de %{kind}."
+    passwords:
+      no_token: "No puedes acceder a esta página si no es desde un correo de restablecimiento de contraseña. Si vienes de un correo de restablecimiento de contraseña, por favor asegúrate de estar usado la URL completa."
+      send_instructions: "Recibirás un correo con instrucciones sobre cómo restablecer tu contraseña en unos minutos."
+      send_paranoid_instructions: "Si tu dirección de correo existe en nuestra base de datos, recibirás un enlace de recuperación de contraseña en tu dirección de correo en unos minutos."
+      updated: "Tu contraseña ha sido cambiada exitosamente. Ahora te has conectado."
+      updated_not_active: "Tu contraseña ha sido cambiada exitosamente."
+    registrations:
+      destroyed: "¡Adiós! Tu cuenta ha sido cancelada con éxito. Esperamos volver a verte pronto."
+      signed_up: "¡Te damos la bienvenida! Te has registrado exitosamente."
+      signed_up_but_inactive: "Te has registrado exitosamente. No obstante, no te pudiste conectar por que tu cuenta aún no es activada."
+      signed_up_but_locked: "Te has registrado exitosamente. No obstante, no te pudiste conectar por que tu cuenta está bloqueada."
+      signed_up_but_unconfirmed: "Un mensaje con un enlace de confirmación ha sido enviado a tu dirección de correo. Por favor, sigue el enlace para activar tu cuenta."
+      update_needs_confirmation: "Actualizaste tu cuenta exitosamente, pero necesitamos verificar tu nueva dirección de correo. Por favor, revisa tu correo y sigue el enlace de confirmación para confirmar tu nueva dirección de correo."
+      updated: "Tu cuenta ha sido actualizada exitosamente."
+    sessions:
+      signed_in: "Conectado exitosamente."
+      signed_out: "Sesión cerrada exitosamente."
+      already_signed_out: "Sesión cerrada exitosamente."
+    unlocks:
+      send_instructions: "Recibirás un coreo con instrucciones sobre cómo desbloquear tu cuenta en unos minutos."
+      send_paranoid_instructions: "Si tu cuenta existe, recibirás un correo con instrucciones sobre cómo desbloquearla en unos minutos."
+      unlocked: "Tu cuenta ha sido desbloqueada exitosamente. Por favor, conéctate para continuar."
+  errors:
+    messages:
+      already_confirmed: "ya ha sido confirmada, por favor intenta conectarte"
+      confirmation_period_expired: "debe ser confirmada dentro de %{period}, por favor solicita uno nuevo"
+      expired: "ha expirado, por favor solicita uno nuevo"
+      not_found: "no encontrado"
+      not_locked: "no estaba bloqueada"
+      not_saved:
+        one: "1 error impidió que este %{resource} sea guardado:"
+        other: "%{count} errores impidieron que este %{resource} sea guardado:"
