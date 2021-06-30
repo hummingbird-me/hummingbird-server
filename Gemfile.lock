@@ -588,7 +588,7 @@ GEM
     roadie-rails (2.2.0)
       railties (>= 5.1, < 6.2)
       roadie (>= 3.1, < 5.0)
-    rolify (5.3.0)
+    rolify (6.0.0)
     rspec (3.10.0)
       rspec-core (~> 3.10.0)
       rspec-expectations (~> 3.10.0)
