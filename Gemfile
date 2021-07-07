@@ -40,7 +40,7 @@ gem 'mini_magick'
 gem 'paperclip', '~> 6.0.0'
 gem 'paperclip-meta'
 gem 'paperclip-optimizer'
-gem 'shrine'
+gem 'shrine', '>= 3.3.0'
 
 # Background tasks
 gem 'sidekiq', '~> 5'
@@ -66,27 +66,27 @@ gem 'jsonapi-resources', '0.9.0'
 
 # Miscellaneous Utilities
 gem 'active_flag' # Bitfields!
-gem 'addressable' # Fancy address logic
+gem 'addressable' , '>= 2.8.0' # Fancy address logic
 gem 'bootsnap' # Faster boots
 gem 'counter_culture' # Fancier counter caches
 gem 'faraday'
 gem 'faraday_middleware'
 gem 'fastimage' # Quickly get image sizes
 gem 'friendly_id' # slug-urls-are-cool
-gem 'google-api-client' # Google APIs
+gem 'google-api-client' , '>= 0.53.0' # Google APIs
 gem 'graphql-client' # make graphql calls
 gem 'health_bit' # Allow Kubernetes to check the health
-gem 'http' # Pewpew HTTP calls easier
+gem 'http' , '>= 4.4.1' # Pewpew HTTP calls easier
 gem 'ice_cube' # Episode release schedules
 gem 'lograge' # Non-shitty logging
-gem 'mechanize' # Automating interaction with websites
+gem 'mechanize' , '>= 2.8.1' # Automating interaction with websites
 gem 'nokogiri', '~> 1.11.0' # Parse MAL XML shit
 gem 'one_signal' # Send push notifications
 gem 'paranoia', '~> 2.4' # Faux deletion
 gem 'postmark-rails' # Send via Postmark
 gem 'ranked-model' # Sortables!
 gem 'retriable' # Retry when errors happen
-gem 'roadie-rails' # Inline CSS for emails
+gem 'roadie-rails' , '>= 2.2.0' # Inline CSS for emails
 gem 'ruby-progressbar' # Fancy progress bars for Rake tasks
 gem 'sass-rails' # Process SCSS for emails
 gem 'sitemap_generator' # Generate Sitemaps
@@ -152,7 +152,7 @@ group :test do
   gem 'shoulda-matchers' # it { should(:have_shoulda) }
   gem 'stripe-ruby-mock', require: 'stripe_mock' # Mock Stripe API
   gem 'timecop' # stop [hammer-]time
-  gem 'webmock' # Web faking
+  gem 'webmock' , '>= 3.12.2' # Web faking
 
   # Coverage
   gem 'simplecov' # Local coverage
