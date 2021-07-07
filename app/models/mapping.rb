@@ -42,6 +42,8 @@ class Mapping < ApplicationRecord
       filters << "episodeCount:#{query[:episode_count] - 2} TO #{query[:episode_count] + 2}"
     end
 
+    filters << query[:subtype] if query[:subtype]
+
     AlgoliaMediaIndex.search(
       query[:title],
       filters: filters.join(' AND ')
